@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1</title>
+    <!-- Link para o JQuery via CND -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <style>
+        /*Estilos Basicos*/
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            transition: backgroud-color 0.3s ease;
+        }
+        .highlight {
+         background-color: yellow;
+        }
+     </style>
+</head>
+<body>
+   <div id="box">Clique Aqui</div>
+
+   <script>
+      //Iniciando o JQuery quando o documento estiver pronto
+      $(document).ready( function() {
+         //Ao clicar no #box, ele muda a cor de fundo
+         $('#box').click(function() {
+            //Alterna a classe 'highlight', mudando a cor
+            $(this).toggleClass('highlight');
+            //Muda o texto do elemento
+            $(this).text('Você clicou!');
+            
+         });
+      }
+
+      );
+   </script>
+    
+</body>
+</html>

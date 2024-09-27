@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        td {
+            border: 1px solid #000;    /*Borda preta*/
+            padding: 10px;               /*Espaço interno*/
+            text-align: center;          /*Alinhamento do texto centralizado*/
+            background-color: #f2f2f2; /*Cor de fundo*/
+        }
+        td:hover {
+            border: 2.5px solid #000;
+            padding: 12px;
+            background-color: #c9c5c5;
+        }
+        p{
+            border: 1px solid #000;
+            padding: 30px;
+            width: 35px;
+            text-align: right;
+            background-color: beige;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <div>
+        <table>
+            <title>Calculadora Simples</title>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>+</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>/</td>
+                    <td>=</td>
+                </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3" id="limpar">Limpar</td>
+                </tr>
+            </tfoot>
+            </tbody>
+        </table>
+
+        <div>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script>
+        let valor1 = null; //Armazena o primeiro valor
+        let operador = null; //Armazena o operador
+
+        $(document).ready(function(){
+            $("td").on("click", function(){
+                var valorClicado = $(this).text();
+
+                if(["+","-","*","/"].includes(valorClicado)){
+                    //Se for um operador, armazena o valor1 e o operador
+                    if(valor1 === null){
+                        valor1 = parseFloat($("#resultado").text());
+                    }
+                    operador = valorClicado; //Armazena o operador
+                    $("#resultado").text(""); //Limpa o resultado para o proximo numero
+                } else if (valorClicado == "="){
+                    //Se for igual, realiza a operação
+                    let valor2 = parseFloat($("#resultado").text());
+                    let resultado = realizarOperacao(valor1,valor2,operador);
+                    $("#resultado").text(resultado); //Reseta valor1 para nova operação
+                    valor1 = null; //Reseta valor1 paranova operação
+                    operador = null; //Reseta operador para nova operação
+                } else if (valorClicado === "Limpar") {
+                    //Se clicar em "Limpar", reseta tudo
+                    valor1 = null;
+                    operador = null;
+                    $("#resultado").text(""); //Limpa o resultado
+                } else {
+                    //Para número
+                    $("#resultado").text($("#resultado").text() + valorClicado);//Adiciona o número ao resultado
+                }
+            });
+        });
+
+        function realizarOperacao(valor1,valor2,operador){
+            switch (operador) {
+                case "+":
+                    return valor1 + valor2;
+                case "-":
+                    return valor1 - valor2;
+                case "/":
+                    return valor1 / valor2;
+                case "*":
+                    return valor1 * valor2;
+                default:
+                    return valor2
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            background-color: lightgreen;
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        li:hover{
+            background-color: lightcoral;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button id="addItem">Adicionar Item</button>
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <script>
+        //quando o documento estiver pronto
+        $(document).ready(function () {
+            //Variável para contar os itens
+            let itemCount = 2;
+
+            //Quando o botão for clicado
+            $('#addItem').click(function () {
+                itemCount++; //Incrementa a contagem d eitens
+                //Adiciona um novo item à lista
+                $('#itemList').append('<li>Item ' + itemCount + '</li>');
+            });
+
+            //Evento para clicar nos itens
+            $(document).on('click', 'li', function(){
+                $(this).fadeOut(); //Faz o item desaparecer ao ser clicado
+            }); 
+        });
+    </script>
+    
+</body>
+</html>
