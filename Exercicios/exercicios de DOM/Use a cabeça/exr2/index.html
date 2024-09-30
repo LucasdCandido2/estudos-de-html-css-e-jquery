@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Friends Campaign: JQuery Proof-of-Concept</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clicMe">Show Me the Furry Friend of the Day</div>
+    <div id="picframe">
+        <img src="3-maneiras-de-cuidar-do-seu-filhote-de-cachorro-com-qualidade.jpg" alt="">
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#clicMe").click(function(){
+                $("img").fadeToggle(1000);
+                $("#picframe").slideToggle("slow");
+            });
+        });
+    </script>
+    
+</body>
+</html>

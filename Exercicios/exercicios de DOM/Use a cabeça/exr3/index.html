@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump for joy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <h2>Jump for Joy Sale</h2>
+    </div>
+    <div id="main">
+        <div class="guess_box"><img src="pessoa.png" alt=""><p id="pessoa"></p></div>
+        <div class="guess_box"><img src="pessoa2.png" alt=""><p id="pessoa2"></p></div>
+        <div class="guess_box"><img src="pessoa3.png" alt=""><p id="pessoa3"></p></div>
+        <div class="guess_box"><img src="pessoa4.png" alt=""><p id="pessoa4"></p></div>
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $(".guess_box").click(function(){
+            //     alert("You clicked me.");
+            // });//end click function
+            $(".guess_box").click(function(){
+                var discount = Math.floor((Math.random()*5)+5);
+                $("p").text("Seu desconto é <strong>"+discount+"</strong>");
+            });
+            $("#pessoa2").click(function(){
+                var discount = Math.floor((Math.random()*5)+5);
+                $("p").text("Seu desconto é <strong>"+discount+"</strong>");
+            });
+            $("#pessoa3").click(function(){
+                var discount = Math.floor((Math.random()*5)+5);
+                $("p").text("Seu desconto é <strong>"+discount+"</strong>");
+            });
+            $("#pessoa4").click(function(){
+                var discount = Math.floor((Math.random()*5)+5);
+                $("p").text("Seu desconto é <strong>"+discount+"</strong>");
+            });
+        });//end doc ready
+    </script>
+    
+</body>
+</html>
