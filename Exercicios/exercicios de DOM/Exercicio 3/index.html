@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    
+    <!-- Formulário para adicionar novas tarefas -->
+    <form id="task-form">
+      <input type="text" id="new-task" placeholder="Nova tarefa" required>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- Lista de tarefas -->
+    <ul id="task-list"></ul>
+
+    <!-- Contagem de tarefas -->
+     <p id="task-count">Total de Tarefas: 0</p>
+
+    <!-- Botão de simulação de AJAX -->
+    <button id="load-tasks">Carregar Tarefas Exemplo (AJAX)</button>
+  </div>
+</body>
+</html>
