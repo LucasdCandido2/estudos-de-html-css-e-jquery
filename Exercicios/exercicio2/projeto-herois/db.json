@@ -1,0 +1,142 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Captain America",
+      "real_name": "Steve Rogers",
+      "age": 101,
+      "powers": [
+        "Super strength",
+        "Enhanced speed",
+        "Enhanced durability",
+        "Expert combat skills"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Thor",
+      "real_name": "Thor Odinson",
+      "age": 1500,
+      "powers": [
+        "Super strength",
+        "Lightning manipulation",
+        "Flight with Mjolnir",
+        "Immortality"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Hulk",
+      "real_name": "Bruce Banner",
+      "age": 49,
+      "powers": [
+        "Superhuman strength",
+        "Invulnerability",
+        "Enhanced regeneration",
+        "Transformation into Hulk form"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Black Widow",
+      "real_name": "Natasha Romanoff",
+      "age": 34,
+      "powers": [
+        "Expert hand-to-hand combatant",
+        "Expert marksman",
+        "Espionage",
+        "Acrobatics"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Doctor Strange",
+      "real_name": "Stephen Strange",
+      "age": 45,
+      "powers": [
+        "Mystic arts",
+        "Dimensional manipulation",
+        "Time manipulation",
+        "Astral projection"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Black Panther",
+      "real_name": "T'Challa",
+      "age": 35,
+      "powers": [
+        "Superhuman senses",
+        "Enhanced strength",
+        "Enhanced agility",
+        "Vibranium suit"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Scarlet Witch",
+      "real_name": "Wanda Maximoff",
+      "age": 29,
+      "powers": [
+        "Reality manipulation",
+        "Telekinesis",
+        "Energy projection",
+        "Telepathy"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Captain Marvel",
+      "real_name": "Carol Danvers",
+      "age": 38,
+      "powers": [
+        "Superhuman strength",
+        "Energy absorption",
+        "Flight",
+        "Enhanced durability"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Spider-Man",
+      "real_name": "Peter Parker",
+      "age": 17,
+      "powers": [
+        "Super strength",
+        "Spider-sense",
+        "Wall-crawling",
+        "Enchanced agility"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "teste",
+      "real_name": "teste",
+      "age": 21,
+      "powers": [
+        "test"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Spider-Man",
+      "real_name": "Peter Parker",
+      "age": 17,
+      "powers": [
+        "Super strength",
+        "Spider-sense",
+        "Wall-crawling",
+        "Enchanced agility"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "test",
+      "real_name": "test",
+      "age": 234,
+      "powers": [
+        "tess"
+      ]
+    }
+  ]
+}

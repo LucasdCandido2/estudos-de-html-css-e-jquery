@@ -92,4 +92,16 @@ $(document).ready(function(){
             updateTaskcount();
         });
     });
+
+    //mostrar apenas tarefas concluidas
+    $('#show-done').click(function(){
+        $('li').hide(); //esconde todas as tarefas
+        $('li.done').show(); //mostra apenas as tarefas concuidas
+    });
+
+    //mostrar apenas tarefas pendentes
+    $('#show-pending').click(function(){
+        $('li').hide(); //esconde todas as tarefas
+        $('li:not(.done)').show(); //mostra apenas as pendentes
+    });
 });
