@@ -27,29 +27,47 @@ async function cadastrar() {
         return;
     }
 
-    let pessoasResponse = await fetch('http://localhost:3000/pessoas');
+    if (id) {
+        let response = await fetch(`http://localhost:3000/pessoas/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({nome,email,senha}),
+        });
+        if (!response.ok) {
+            throw new Error('Falha ao editar pessoa');
+        }
+        $('#submit-btn').removeData('id');//Remove o ID armazenado após a edição
+    } else {
 
-    let pessoas = await pessoasResponse.json();
+        let pessoasResponse = await fetch('http://localhost:3000/pessoas');
 
-    let maxId = 0;
-    if(pessoas.length > 0) {
-        maxId = Math.max(...pessoas.map(p => p.id));
+        let pessoas = await pessoasResponse.json();
+
+        let maxId = 0;
+        if(pessoas.length > 0) {
+            maxId = Math.max(...pessoas.map(p => p.id));
+        }
+
+        let novoId = (maxId + 1).toString();
+        
+
+        let response = await fetch('http://localhost:3000/pessoas', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({id:novoId, nome, email, senha}),
+
+        });
+        if(!response.ok) {
+            throw new Error('Falha ao adicionar pessoas');
+        }
     }
 
-    let novoId = (maxId + 1).toString();
-    
+    getData();//Atualiza a tabela após o cadastro ou edição
 
-    let response = await fetch('http://localhost:3000/pessoas', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({id:novoId, nome, email, senha}),
-
-    });
-    if(!response.ok) {
-        throw new Error('Falha ao adicionar pessoas');
-    }
 }
 
 
@@ -62,13 +80,14 @@ $(document).ready(function () {
     const getData = async function () {
         let response = await fetch('http://localhost:3000/pessoas')
         let data = await response.json();
-        data.forEach(function (e,id) {
+        data.forEach(function (e) {
             $('tbody').append(`                
                 <tr data-id="${e.id}">
                     <td>${e.id}</td>
                     <td>${e.nome}</td>
                     <td>${e.email}</td>
                     <td>${e.senha}</td>
+                    <td onclick="editar(${e.id})">Editar</td>
                     <td onclick="deletar(${e.id})">Deletar</td>
                 </tr>            
                 `);
