@@ -9,7 +9,7 @@ async function deletar(id) {
     }
     getData();
     
-    $(`tr[data-id='${id}']`).remove();
+    // $(`tr[data-id='${id}']`).remove();
 
 
     
