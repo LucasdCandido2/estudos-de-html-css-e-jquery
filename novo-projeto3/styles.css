@@ -85,3 +85,17 @@ button.delete-btn {
 button.delete-btn:hover {
     background-color: #e53935;
 }
+.status-analise {
+    background-color: yellow;
+    color: black;
+}
+
+.status-concluido {
+    background-color: green;
+    color: white;
+}
+
+.status-cancelado {
+    background-color: red;
+    color: white;
+}

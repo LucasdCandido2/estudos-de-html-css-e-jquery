@@ -39,6 +39,8 @@ async function cadastrar() {
             throw new Error('Falha ao editar pessoa');
         }
         $('#submit-btn').removeData('id');//Remove o ID armazenado após a edição
+
+        
     } else {
 
         let pessoasResponse = await fetch('http://localhost:3000/pessoas');

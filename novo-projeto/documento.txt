@@ -1,0 +1,4 @@
+cadastro de novo bilhete, necessario fotos correspondentes ao bilhete
+
+recarga, necessario numero do bilhete e dados de um cartão de credito
+bilhete para recarga 
