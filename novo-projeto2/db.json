@@ -1,0 +1,74 @@
+{
+  "pessoas": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "email": "joao.silva@example.com",
+      "senha": "123456",
+      "status": "1"
+    },
+    {
+      "id": "2",
+      "nome": "Maria Oliveira",
+      "email": "maria.oliveira@example.com",
+      "senha": "654321",
+      "status": "2"
+    },
+    {
+      "id": "3",
+      "nome": "Carlos Pereira",
+      "email": "carlos.pereira@example.com",
+      "senha": "abcdef",
+      "status": "0"
+    },
+    {
+      "id": "4",
+      "nome": "Ana Souza",
+      "email": "ana.souza@example.com",
+      "senha": "senha123",
+      "status": "1"
+    },
+    {
+      "id": "5",
+      "nome": "Fernanda Lima",
+      "email": "fernanda.lima@example.com",
+      "senha": "limaf123",
+      "status": "0"
+    },
+    {
+      "id": "6",
+      "nome": "Lucas Almeida",
+      "email": "lucas.almeida@example.com",
+      "senha": "lucas123",
+      "status": "2"
+    },
+    {
+      "id": "7",
+      "nome": "Clara Silva",
+      "email": "clara.silva@example.com",
+      "senha": "clara789",
+      "status": "1"
+    },
+    {
+      "id": "8",
+      "nome": "Rodrigo Santos",
+      "email": "rodrigo.santos@example.com",
+      "senha": "rds123",
+      "status": "2"
+    },
+    {
+      "id": "9",
+      "nome": "Julia Costa",
+      "email": "julia.costa@example.com",
+      "senha": "julia321",
+      "status": "0"
+    },
+    {
+      "id": "10",
+      "nome": "Felipe Gomes",
+      "email": "felipe.gomes@example.com",
+      "senha": "fg123456",
+      "status": "1"
+    }
+  ]
+}
