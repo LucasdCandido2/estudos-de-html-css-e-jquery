@@ -93,11 +93,7 @@ $(document).ready(function(){
                     <td>${e.hora}</td>
                     <td>
                         <select onchange="statusOuApagar(${e.id}, this.value)">
-                            <option value="agendado" ${statusValue === 'agendado' ? 'selected' : ''}>Agendado</option>
-                            <option value="atendimento" ${statusValue === 'atendimento' ? 'selected' : ''}>Atendimento</option>
-                            <option value="cancelado" ${statusValue === 'cancelado' ? 'selected' : ''}>Cancelado</option>
-                            <option value="finalizado" ${statusValue === 'finalizado' ? 'selected' : ''}>Finalizado</option>
-                            <option value="delete" ${statusValue === 'delete' ? 'selected' : ''}>Deletar</option>
+                            ${gerarOpcoes(e.status)}
                         </select>
                     </td>
                 </tr>
@@ -117,7 +113,6 @@ $(document).ready(function(){
                     <td>${e.data}</td>
                     <td>${e.hora}</td>
                     <td>${e.status}</td>
-                    <td><button>Deletar</button></td>
                 </tr>
                 `)
             
@@ -169,6 +164,7 @@ function deletar(id) {
         if(!response.ok){
             throw new Error('Falha ao deletar agendamento');
         }
+        carregarAgendamentos();
     })
     .catch(error => {
         console.error(error);
@@ -176,4 +172,49 @@ function deletar(id) {
         
     })
     
+}
+
+function gerarOpcoes(statusAtual) {
+    let opcoes = '';
+    switch (statusAtual) {
+        // case "agendado":
+        //     opcoes += `<option value="atendimento">Atendimento</option>`;
+        //     opcoes += `<option value="cancelado">Cancelado</option>`;
+        //     opcoes += `<option value="finalizado">Finalizado</option>`;
+        //     opcoes += `<option value="delete">Deletar</option>`;
+        //     break;
+        // case "atendimento":
+        //     opcoes += `<option value="agendado">Agendado</option>`;
+        //     opcoes += `<option value="cancelado">Cancelado</option>`;
+        //     opcoes += `<option value="finalizado">Finalizado</option>`;
+        //     opcoes += `<option value="delete">Deletar</option>`;
+        //     break;
+        // case "cancelado":
+        //     opcoes += `<option value="agendado">Agendado</option>`;
+        //     opcoes += `<option value="atendimento">Atendimento</option>`;
+        //     opcoes += `<option value="finalizado">Finalizado</option>`;
+        //     opcoes += `<option value="delete">Deletar</option>`;
+        //     break;
+        // case "finalizado":
+        //     break;
+        case "agendado":
+            opcoes += `<option value="atendimento">Atendimento</option>`;
+            opcoes += `<option value="cancelado">Cancelado</option>`;
+            opcoes += `<option value="finalizado">Finalizado</option>`;
+            opcoes += `<option value="delete">Delete</option>`;
+            break;
+        case "atendimento":
+            opcoes += `<option value="finalizado">Finalizado</option>`;
+            opcoes += `<option value="cancelado">Cancelado</option>`;
+            opcoes += `<option value="delete">Delete</option>`;
+            break;
+        case "cancelado":
+            opcoes += `<option value="agendado">Agendado</option>`;
+            opcoes += `<option value="delete">Delete</option>`;
+            break;
+        case "finalizado":
+            // Não exibe opções se já está finalizado
+            break;
+    }
+    return opcoes;
 }
