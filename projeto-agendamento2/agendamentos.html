@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos - Agendamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h2>Agendamentos</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Cadastro</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h3>Agendamentos Aguardando/Atendendo</h3>
+        <table id="agendamentos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Horario</th>
+                    <th>Status</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os dados serão preenchidos aqui dinamicamente -->
+            </tbody>
+        </table>
+
+        <h3>Agendamentos Atendidos</h3>
+        <table id="atendidos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Horario</th>
+                    <th>Status</th>
+                    <th>Editar</th>
+                    <th>Deletar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os dados atendidos serão preenchidos aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "agendamentosAguardando": [
+    {
+      "id": "1",
+      "nome": "Registro 1",
+      "data": "2024-10-09",
+      "hora": "10:00",
+      "status": "Aguardando"
+    },
+    {
+      "id": "2",
+      "nome": "Registro 2",
+      "data": "2024-10-09",
+      "hora": "11:00",
+      "status": "Aguardando"
+    },
+    {
+      "id": "NaN",
+      "nome": "teste",
+      "data": "2024-10-09",
+      "horario": "15:00",
+      "status": "Aguardando"
+    }
+  ],
+  "agendamentosAtendidos": [
+    {
+      "id": "3",
+      "nome": "Registro 3",
+      "data": "2024-10-08",
+      "hora": "09:00",
+      "status": "Atendido"
+    }
+  ]
+}
