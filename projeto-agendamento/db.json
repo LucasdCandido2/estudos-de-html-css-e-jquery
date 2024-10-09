@@ -1,0 +1,144 @@
+{
+  "agendamentos": [
+    {
+      "id": 1,
+      "nome": "Maria Silva",
+      "data": "2024-10-09",
+      "hora": "09:00",
+      "status": "finalizado"
+    },
+    {
+      "id": 2,
+      "nome": "João Santos",
+      "data": "2024-10-09",
+      "hora": "10:00",
+      "status": "agendado"
+    },
+    {
+      "id": 3,
+      "nome": "Ana Oliveira",
+      "data": "2024-10-09",
+      "hora": "11:00",
+      "status": "agendado"
+    },
+    {
+      "id": 4,
+      "nome": "Carlos Souza",
+      "data": "2024-10-09",
+      "hora": "12:00",
+      "status": "agendado"
+    },
+    {
+      "id": 5,
+      "nome": "Fernanda Lima",
+      "data": "2024-10-09",
+      "hora": "13:00",
+      "status": "agendado"
+    },
+    {
+      "id": 6,
+      "nome": "Pedro Almeida",
+      "data": "2024-10-09",
+      "hora": "14:00",
+      "status": "atendimento"
+    },
+    {
+      "id": 7,
+      "nome": "Clara Ribeiro",
+      "data": "2024-10-09",
+      "hora": "15:00",
+      "status": "atendimento"
+    },
+    {
+      "id": 8,
+      "nome": "Lucas Ferreira",
+      "data": "2024-10-09",
+      "hora": "16:00",
+      "status": "atendimento"
+    },
+    {
+      "id": 9,
+      "nome": "Juliana Costa",
+      "data": "2024-10-09",
+      "hora": "17:00",
+      "status": "atendimento"
+    },
+    {
+      "id": 10,
+      "nome": "Rafael Martins",
+      "data": "2024-10-09",
+      "hora": "18:00",
+      "status": "atendimento"
+    },
+    {
+      "id": 11,
+      "nome": "Renata Mendes",
+      "data": "2024-10-09",
+      "hora": "09:30",
+      "status": "cancelado"
+    },
+    {
+      "id": 12,
+      "nome": "Felipe Pereira",
+      "data": "2024-10-09",
+      "hora": "10:30",
+      "status": "cancelado"
+    },
+    {
+      "id": 13,
+      "nome": "Isabela Rocha",
+      "data": "2024-10-09",
+      "hora": "11:30",
+      "status": "cancelado"
+    },
+    {
+      "id": 14,
+      "nome": "Thiago Cardoso",
+      "data": "2024-10-09",
+      "hora": "12:30",
+      "status": "cancelado"
+    },
+    {
+      "id": 15,
+      "nome": "Camila Nascimento",
+      "data": "2024-10-09",
+      "hora": "13:30",
+      "status": "cancelado"
+    },
+    {
+      "id": 16,
+      "nome": "Marcos Lima",
+      "data": "2024-10-09",
+      "hora": "14:30",
+      "status": "finalizado"
+    },
+    {
+      "id": 17,
+      "nome": "Sofia Santos",
+      "data": "2024-10-09",
+      "hora": "15:30",
+      "status": "finalizado"
+    },
+    {
+      "id": 18,
+      "nome": "Gustavo Almeida",
+      "data": "2024-10-09",
+      "hora": "16:30",
+      "status": "finalizado"
+    },
+    {
+      "id": 19,
+      "nome": "Patrícia Dias",
+      "data": "2024-10-09",
+      "hora": "17:30",
+      "status": "finalizado"
+    },
+    {
+      "id": 20,
+      "nome": "André Oliveira",
+      "data": "2024-10-09",
+      "hora": "18:30",
+      "status": "finalizado"
+    }
+  ]
+}

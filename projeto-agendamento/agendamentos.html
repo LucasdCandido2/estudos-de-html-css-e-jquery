@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Cadastro</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <h1>Todos os Agendamentos</h1>
+
+    <h2>Em Aguardo/Em Atendimento/Cancelados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-agendamentos">
+            <!-- Agendamentos em aguardo serão inseridos aqui -->
+        </tbody>
+    </table>
+
+    <h2>Atendimentos Concluídos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-concluidos">
+            <!-- Agendamentos concluídos serão inseridos aqui -->
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

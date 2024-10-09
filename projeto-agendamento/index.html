@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Agendamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Cadastro</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <h1>Cadastro de Agendamento</h1>
+    <form id="form-agendamento">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data"><br><br>
+
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" name="horario"><br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* Estilo base para o select */
+.select-custom {
+    width: 200px; /* Largura do select */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Cantos arredondados */
+    background-color: #fff; /* Fundo do select */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para as opções com classe 'status-analise' */
+.select-custom .status-analise {
+    background-color: #f0ad4e; /* Amarelo */
+    color: white; /* Cor do texto */
+}
+
+/* Estilo para as opções com classe 'status-atendimento' */
+.select-custom .status-atendimento {
+    background-color: #5bc0de; /* Azul */
+    color: white; /* Cor do texto */
+}
+
+/* Estilo para as opções com classe 'status-cancelado' */
+.select-custom .status-cancelado {
+    background-color: #d9534f; /* Vermelho */
+    color: white; /* Cor do texto */
+}
+
+/* Estilo para as opções com classe 'status-finalizado' */
+.select-custom .status-finalizado {
+    background-color: #5cb85c; /* Verde */
+    color: white; /* Cor do texto */
+}
