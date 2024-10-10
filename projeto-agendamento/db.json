@@ -12,7 +12,7 @@
       "nome": "João Santos",
       "data": "2024-10-09",
       "hora": "10:00",
-      "status": "cancelado"
+      "status": "agendado"
     },
     {
       "id": 3,
@@ -75,40 +75,40 @@
       "nome": "Renata Mendes",
       "data": "2024-10-09",
       "hora": "09:30",
-      "status": "cancelado"
+      "status": "agendado"
     },
     {
       "id": 12,
       "nome": "Felipe Pereira",
       "data": "2024-10-09",
       "hora": "10:30",
-      "status": "cancelado"
+      "status": "atendimento"
     },
     {
       "id": 13,
       "nome": "Isabela Rocha",
       "data": "2024-10-09",
       "hora": "11:30",
-      "status": "cancelado"
+      "status": "atendimento"
     },
     {
       "id": 14,
       "nome": "Thiago Cardoso",
       "data": "2024-10-09",
       "hora": "12:30",
-      "status": "cancelado"
+      "status": "atendimento"
     },
     {
       "id": 15,
       "nome": "Camila Nascimento",
       "data": "2024-10-09",
       "hora": "13:30",
-      "status": "cancelado"
+      "status": "atendimento"
     },
     {
       "id": 16,
       "nome": "Marcos Lima",
-      "data": "2024-10-09",
+      "data": "2024-10-10",
       "hora": "14:30",
       "status": "finalizado"
     },

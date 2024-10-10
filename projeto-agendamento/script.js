@@ -62,12 +62,13 @@ $(document).ready(function(){
         // alert(JSON.stringify(data))
         $('#tabela-agendamentos').empty();
 
+
+
         let agendamentoFiltrado = data.filter(e => e.status !== "finalizado");
         
 
         agendamentoFiltrado.forEach(function(e) {
             let statusClass = '';
-            let statusValue = e.status;
             switch (e.status){
                 case "agendado":
                     statusClass = 'status-analise';
@@ -75,15 +76,22 @@ $(document).ready(function(){
                 case "atendimento":
                     statusClass = 'status-atendimento';
                     break;
-                case "cancelado":
-                    statusClass = 'status-cancelado';
-                    break;
                 case "finalizado":
                     statusClass = 'status-finalizado';
                     break;
-                case "delete":
-                    break;
             }
+
+            let statusList = ["agendado", "atendimento",  "finalizado"];
+            let opcoes = `<option value="${e.status}" selected>${e.status}</option>`;
+
+
+
+            statusList.forEach(status => {
+                if (status !== e.status) {
+                    
+                    opcoes += `<option value="${status}">${status}</option>`;
+                }
+            });
 
             $('#tabela-agendamentos').append(`
                 <tr data-id="${e.id}">
@@ -92,8 +100,8 @@ $(document).ready(function(){
                     <td>${e.data}</td>
                     <td>${e.hora}</td>
                     <td>
-                        <select onchange="statusOuApagar(${e.id}, this.value)">
-                            ${gerarOpcoes(e.status)}
+                        <select onchange="atualizarStatus(${e.id}, this.value)">
+                            ${opcoes}
                         </select>
                     </td>
                 </tr>
@@ -112,7 +120,12 @@ $(document).ready(function(){
                     <td>${e.nome}</td>
                     <td>${e.data}</td>
                     <td>${e.hora}</td>
-                    <td>${e.status}</td>
+                    <td>
+                        <select onchange="atualizarStatus(${e.id}, this.value)">
+                            <option value="finalizado" selected>finalizado</option>
+                            <option value="agendado">agendado</option>
+                        </select>
+                    </td>
                 </tr>
                 `)
             
@@ -120,20 +133,24 @@ $(document).ready(function(){
         $('#total-atendimentos').empty();
 
         let agendamentoHoje = data.filter(e => e.data === diaFormatado).length;
-        
+        console.log(agendamentoHoje)
 
-        $('#total-atendimentos').append(agendamentoHoje)
+        $('#total-atendimentos').append(agendamentoHoje);
     })
+    .catch(error => {
+        console.error(error);
+        
+    });
 })
 
-function statusOuApagar(id, novoId) {
-    if(novoId === 'delete'){
-        deletar(id);
-    } else {
-        atualizarStatus(id, novoId);
-    }
+// function statusOuApagar(id, novoId) {
+//     if(novoId === 'delete'){
+//         deletar(id);
+//     } else {
+//         atualizarStatus(id, novoId);
+//     }
     
-}
+// }
 
 function atualizarStatus(id, novoId) {
     fetch(`http://localhost:3000/agendamentos/${id}`, {
@@ -156,65 +173,34 @@ function atualizarStatus(id, novoId) {
 
 }
 
-function deletar(id) {
-    fetch(`http://localhost:3000/agendamentos/${id}`,{
-        method: 'DELETE'
-    })
-    .then(response => {
-        if(!response.ok){
-            throw new Error('Falha ao deletar agendamento');
-        }
-        carregarAgendamentos();
-    })
-    .catch(error => {
-        console.error(error);
-        alert('Ocorreu um erro ao deletar agendamento')
+// function deletar(id) {
+//     fetch(`http://localhost:3000/agendamentos/${id}`,{
+//         method: 'DELETE'
+//     })
+//     .then(response => {
+//         if(!response.ok){
+//             throw new Error('Falha ao deletar agendamento');
+//         }
+//     })
+//     .catch(error => {
+//         console.error(error);
+//         alert('Ocorreu um erro ao deletar agendamento')
         
-    })
+//     })
     
-}
+// }
 
-function gerarOpcoes(statusAtual) {
-    let opcoes = '';
-    switch (statusAtual) {
-        // case "agendado":
-        //     opcoes += `<option value="atendimento">Atendimento</option>`;
-        //     opcoes += `<option value="cancelado">Cancelado</option>`;
-        //     opcoes += `<option value="finalizado">Finalizado</option>`;
-        //     opcoes += `<option value="delete">Deletar</option>`;
-        //     break;
-        // case "atendimento":
-        //     opcoes += `<option value="agendado">Agendado</option>`;
-        //     opcoes += `<option value="cancelado">Cancelado</option>`;
-        //     opcoes += `<option value="finalizado">Finalizado</option>`;
-        //     opcoes += `<option value="delete">Deletar</option>`;
-        //     break;
-        // case "cancelado":
-        //     opcoes += `<option value="agendado">Agendado</option>`;
-        //     opcoes += `<option value="atendimento">Atendimento</option>`;
-        //     opcoes += `<option value="finalizado">Finalizado</option>`;
-        //     opcoes += `<option value="delete">Deletar</option>`;
-        //     break;
-        // case "finalizado":
-        //     break;
-        case "agendado":
-            opcoes += `<option value="atendimento">Atendimento</option>`;
-            opcoes += `<option value="cancelado">Cancelado</option>`;
-            opcoes += `<option value="finalizado">Finalizado</option>`;
-            opcoes += `<option value="delete">Delete</option>`;
-            break;
-        case "atendimento":
-            opcoes += `<option value="finalizado">Finalizado</option>`;
-            opcoes += `<option value="cancelado">Cancelado</option>`;
-            opcoes += `<option value="delete">Delete</option>`;
-            break;
-        case "cancelado":
-            opcoes += `<option value="agendado">Agendado</option>`;
-            opcoes += `<option value="delete">Delete</option>`;
-            break;
-        case "finalizado":
-            // Não exibe opções se já está finalizado
-            break;
-    }
-    return opcoes;
-}
+// function gerarOpcoes(statusAtual) {
+//     let opcoes = '';
+//     let statusList = ["agendado","atendimento","cancelado","finalizado","delete"];
+
+//     statusList.forEach(status => {
+//         if(status !== statusAtual) {//adiciona apensa se for diferente do status atual
+//             opcoes += `<option value="${status}">${status}</option>;`;
+//         } else {
+//             opcoes += `<option value="${status}" selected>${status}</option>;`; //marca como selecionada
+//         }
+//     });
+//     return opcoes;
+    
+// }
