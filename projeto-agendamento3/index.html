@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Agendamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Cadastro</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Cadastro de Agendamento</h2>
+        <form id="agendamento-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome"><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="1"><br>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select><br>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora"><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data"><br>
+
+            <button type="submit" id="confirmar-btn">Confirmar</button>
+        </form>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div id="modal-confirmacao" class="modal">
+        <div class="modal-content">
+            <h3>Confirmação de Agendamento</h3>
+            <p>Nome: <span id="confirm-nome"></span></p>
+            <p>Idade: <span id="confirm-idade"></span></p>
+            <p>Sexo: <span id="confirm-sexo"></span></p>
+            <p>Data: <span id="confirm-data"></span></p>
+            <p>Hora: <span id="confirm-hora"></span></p>
+            <button id="finalizar-agendamento">Finalizar</button>
+            <button id="cancelar-agendamento">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

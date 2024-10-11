@@ -1,0 +1,139 @@
+{
+  "agendamentos": [
+    {
+        "id": 1,
+        "nome": "Lucas Silva",
+        "idade": 28,
+        "sexo": "Masculino",
+        "status": "agendado",
+        "data": "2024-10-10",
+        "hora": "10:00"
+      },
+      {
+        "id": 2,
+        "nome": "Maria Santos",
+        "idade": 34,
+        "sexo": "Feminino",
+        "status": "atendendo",
+        "data": "2024-10-10",
+        "hora": "11:00"
+      },
+      {
+        "id": 3,
+        "nome": "João Costa",
+        "idade": 45,
+        "sexo": "Masculino",
+        "status": "finalizado",
+        "data": "2024-10-09",
+        "hora": "12:00"
+      },
+      {
+        "id": 4,
+        "nome": "Ana Oliveira",
+        "idade": 29,
+        "sexo": "Feminino",
+        "status": "cancelado",
+        "data": "2024-10-10",
+        "hora": "13:00"
+      },
+      {
+        "id": 5,
+        "nome": "Pedro Souza",
+        "idade": 39,
+        "sexo": "Masculino",
+        "status": "agendado",
+        "data": "2024-10-11",
+        "hora": "09:00"
+      },
+      {
+        "id": 6,
+        "nome": "Juliana Ribeiro",
+        "idade": 25,
+        "sexo": "Feminino",
+        "status": "finalizado",
+        "data": "2024-10-09",
+        "hora": "14:00"
+      },
+      {
+        "id": 7,
+        "nome": "Carlos Mendes",
+        "idade": 33,
+        "sexo": "Masculino",
+        "status": "agendado",
+        "data": "2024-10-11",
+        "hora": "10:00"
+      },
+      {
+        "id": 8,
+        "nome": "Patrícia Lima",
+        "idade": 40,
+        "sexo": "Feminino",
+        "status": "atendendo",
+        "data": "2024-10-11",
+        "hora": "11:00"
+      },
+      {
+        "id": 9,
+        "nome": "Ricardo Faria",
+        "idade": 31,
+        "sexo": "Masculino",
+        "status": "finalizado",
+        "data": "2024-10-09",
+        "hora": "15:00"
+      },
+      {
+        "id": 10,
+        "nome": "Camila Borges",
+        "idade": 27,
+        "sexo": "Feminino",
+        "status": "cancelado",
+        "data": "2024-10-11",
+        "hora": "12:00"
+      },
+      {
+        "nome": "teste",
+        "idade": "1221",
+        "sexo": "Masculino",
+        "hora": "12:12",
+        "data": "2024-10-11",
+        "status": "agendado",
+        "id": 11
+      },
+      {
+        "nome": "teste",
+        "idade": "1212",
+        "sexo": "Masculino",
+        "hora": "12:12",
+        "data": "2024-10-11",
+        "status": "agendado",
+        "id": 12
+      },
+      {
+        "nome": "teste",
+        "idade": "17",
+        "sexo": "Masculino",
+        "hora": "13:16",
+        "data": "2024-10-11",
+        "status": "agendado",
+        "id": 13
+      },
+      {
+        "nome": "teste",
+        "idade": "1212",
+        "sexo": "Masculino",
+        "hora": "12:12",
+        "data": "1212-12-12",
+        "status": "agendado",
+        "id": 14
+      },
+      {
+        "nome": "qweqwe",
+        "idade": "123",
+        "sexo": "Masculino",
+        "hora": "12:12",
+        "data": "2024-10-11",
+        "status": "agendado",
+        "id": 15
+      }
+  ]
+}

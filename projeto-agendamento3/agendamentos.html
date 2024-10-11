@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Cadastro</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Legenda de Status</h2>
+        <div class="legenda">
+            <span class="status-circle agendado"></span> Agendado
+            <span class="status-circle atendendo"></span> Atendendo
+            <span class="status-circle finalizado"></span> Finalizado
+            <span class="status-circle cancelado"></span> Cancelado
+        </div>
+
+        <h2>Agendamentos</h2>
+        <div class="filtros">
+            <label for="filtro-status">Filtrar por status:</label>
+            <select id="filtro-status">
+                <option value="todos">Todos</option>
+                <option value="agendado">Agendado</option>
+                <option value="atendendo">Atendendo</option>
+                <option value="finalizado">Finalizado</option>
+                <option value="cancelado">Cancelado</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>Hora</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="agendamentos-tabela">
+                <!-- Agendamentos serão carregados via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
