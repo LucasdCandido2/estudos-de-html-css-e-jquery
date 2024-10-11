@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove margin para centralizar corretamente */
+}
+
+li {
+    font-size: 18px;
+    padding: 10px; /* Aumenta o espaçamento em torno de cada item */
+    color: #555;
+    display: inline-block; /* Exibe os itens em linha */
+    margin: 5px; /* Adiciona um pequeno espaço entre os itens */
+    background-color: #e7e7e7; /* Adiciona um fundo leve */
+    border-radius: 4px; /* Bordas arredondadas */
+}
