@@ -1,0 +1,141 @@
+/* Navbar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+}
+
+/* Barra de progresso */
+progress {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Legenda de status */
+.legend {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.legend span {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-agendado {
+    background-color: blue;
+}
+
+.status-atendendo {
+    background-color: orange;
+}
+
+.status-finalizado {
+    background-color: green;
+}
+
+.status-cancelado {
+    background-color: red;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Filtros */
+.filtros {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filtros input, .filtros select {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}

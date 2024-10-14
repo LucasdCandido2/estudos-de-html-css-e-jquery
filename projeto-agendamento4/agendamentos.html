@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Cadastro</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <h1>Agendamentos</h1>
+
+    <div class="legend">
+        <span><span class="dot status-agendado"></span> Agendado</span>
+        <span><span class="dot status-atendendo"></span> Atendendo</span>
+        <span><span class="dot status-finalizado"></span> Finalizado</span>
+        <span><span class="dot status-cancelado"></span> Cancelado</span>
+    </div>
+
+    <div class="filtros">
+        <input type="text" id="pesquisa" placeholder="Pesquisar...">
+        <select id="statusFiltro">
+            <option value="">Todos os status</option>
+            <option value="agendado">Agendado</option>
+            <option value="atendendo">Atendendo</option>
+            <option value="finalizado">Finalizado</option>
+            <option value="cancelado">Cancelado</option>
+        </select>
+    </div>
+
+    <table id="agendamentosTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Idade</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Status</th>
+                <th>Imagem</th>
+                <th>CSV</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

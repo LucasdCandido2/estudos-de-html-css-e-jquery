@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Agendamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Cadastro</a></li>
+            <li><a href="agendamentos.html">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <h1>Cadastro de Agendamentos</h1>
+
+    <form id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+        
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required>
+        
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+        
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" required>
+        
+        <label for="imagem">Imagem:</label>
+        <input type="file" id="imagem" accept="image/*" required>
+        
+        <label for="csv">Arquivo CSV:</label>
+        <input type="file" id="csv" accept=".csv">
+        
+        <progress id="progressBar" value="0" max="100"></progress>
+        
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
