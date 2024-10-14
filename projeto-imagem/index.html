@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload de Imagem com Barra de Progresso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            height: 25px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 25px;
+            color: white;
+            transition: width 0.4s ease;
+        }
+        #uploadedImages {
+            margin-top: 20px;
+        }
+        #uploadedImages img {
+            max-width: 200px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Upload de Imagem com Barra de Progresso</h2>
+
+    <form id="uploadForm">
+        <input type="file" id="fileInput" name="file" accept="image/*" required><br><br>
+        <button type="submit">Upload</button>
+    </form>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar">0%</div>
+    </div>
+
+    <div id="status"></div>
+
+    <h3>Imagens Enviadas:</h3>
+    <div id="uploadedImages"></div>
+
+    <!-- Incluindo o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluindo o script de upload -->
+    <script src="script.js"></script>
+
+</body>
+</html>
