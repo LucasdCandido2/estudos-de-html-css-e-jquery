@@ -1,12 +1,6 @@
 {
   "pessoas": [
     {
-      "id": "2",
-      "nome": "test",
-      "email": "test@test.com",
-      "senha": "teste"
-    },
-    {
       "id": "3",
       "nome": "teste",
       "email": "teste@teste.com",
@@ -53,6 +47,12 @@
       "nome": "teste",
       "email": "teste@teste.com",
       "senha": "te"
+    },
+    {
+      "id": "4b8b",
+      "nome": "lucas",
+      "email": "teste@teste.com",
+      "senha": "testestesteste"
     }
   ]
 }
