@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <ul class="lista">
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <button id="adicionarComeco">Adiciona ao começo</button>
+    <button id="adicionarFinal">Adiciona ao final</button>
+    <button id="removerComeco">Remover ao começo</button>
+    <button id="removerFinal">Remover ao final</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#adicionarComeco').on('click',function(){
+            $('.lista').prepend('<li>item1</li>');
+        });
+        $('#adicionarFinal').on('click',function(){
+            $('.lista').append('<li>item4</li>');
+        });
+        $('#removerComeco').on('click', function(){
+            $('.lista li:first-child').remove();
+        })
+        $('#removerFinal').on('click', function(){
+            $('.lista li:last-child').remove();
+        })
+    </script>
+</body>
+</html>
