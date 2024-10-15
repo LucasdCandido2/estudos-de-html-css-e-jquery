@@ -10,44 +10,37 @@ $(document).ready(function() {
         let hora = $('#hora').val();
         let imagem = $('#imagem')[0].files[0];
         let csv = $('#csv')[0].files[0];
-
-        let reader = new FileReader();
-        reader.readAsDataURL(imagem);
-
-        reader.onload = function() {
-            let base64Image = reader.result;
-            
-            let formData = {
-                nome: nome,
-                email: email,
-                idade: idade,
-                data: data,
-                hora: hora,
-                status: 'agendado',
-                imagem: base64Image,
-                csv: csv ? csv.name : ''
-            };
-            
-            $.ajax({
-                url: 'http://localhost:3000/agendamentos',
-                method: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify(formData),
-                xhr: function() {
-                    let xhr = new window.XMLHttpRequest();
-                    xhr.upload.addEventListener('progress', function(event) {
-                        if (event.lengthComputable) {
-                            let percentComplete = (event.loaded / event.total) * 100;
-                            $('#progressBar').val(percentComplete);
-                        }
-                    }, false);
-                    return xhr;
-                },
-                success: function() {
-                    alert('Agendamento cadastrado com sucesso!');
-                }
-            });
-        };
+        
+        let formData = new FormData();
+        formData.append('nome', nome);
+        formData.append('email', email);
+        formData.append('idade', idade);
+        formData.append('data', data);
+        formData.append('hora', hora);
+        formData.append('status', 'agendado');
+        formData.append('imagem', imagem); // Enviar imagem
+        formData.append('csv', csv); // Enviar CSV
+    
+        $.ajax({
+            url: 'http://localhost:3000/agendamentos',
+            method: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            xhr: function() {
+                let xhr = new window.XMLHttpRequest();
+                xhr.upload.addEventListener('progress', function(event) {
+                    if (event.lengthComputable) {
+                        let percentComplete = (event.loaded / event.total) * 100;
+                        $('#progressBar').val(percentComplete);
+                    }
+                }, false);
+                return xhr;
+            },
+            success: function() {
+                alert('Agendamento cadastrado com sucesso!');
+            }
+        });
     });
 
     // Exibir agendamentos de hoje na home
@@ -135,7 +128,6 @@ $(document).ready(function() {
                                           ag.email.toLowerCase().includes(termoPesquisa) ||
                                           ag.idade.toLowerCase().includes(termoPesquisa) ||
                                           ag.data.toLowerCase().includes(termoPesquisa) ||
-                                          ag.status.toLowerCase().includes(termoPesquisa) ||
                                           ag.hora.toLowerCase().includes(termoPesquisa);
                 return correspondeStatus && correspondePesquisa;
             });
@@ -161,7 +153,7 @@ $(document).ready(function() {
                             <span class="dot status-${ag.status}"></span>
                         </td>
                         <td><img src="${ag.imagem}" width="50"></td>
-                        <td>${ag.csv}</td>
+                        <td><a href="#" class="view-csv" data-csv="${ag.csv}">${ag.csv}</a></td>
                     </tr>
                 `;
                 tbody.append(row);
@@ -169,7 +161,32 @@ $(document).ready(function() {
         });
     }
 
-    // Função para atualizar status
+    // Função para abrir o modal com o conteúdo do CSV
+    $(document).on('click', '.view-csv', function(e) {
+        e.preventDefault();
+        let csvFileName = $(this).data('csv');
+        
+        if (csvFileName) {
+            $.ajax({
+                url: `http://localhost:3000/uploads/${csvFileName}`, // Supondo que o arquivo CSV seja armazenado nessa pasta
+                method: 'GET',
+                success: function(data) {
+                    $('#csvContent').text(data); // Exibir o conteúdo do CSV
+                    $('#csvModal').fadeIn(); // Abrir o modal
+                },
+                error: function() {
+                    alert('Erro ao carregar o arquivo CSV');
+                }
+            });
+        }
+    });
+
+    // Fechar o modal
+    $('.close').on('click', function() {
+        $('#csvModal').fadeOut();
+    });
+
+    // Atualizar status
     $(document).on('change', '.statusSelect', function() {
         let novoStatus = $(this).val();
         let agendamentoId = $(this).data('id');
