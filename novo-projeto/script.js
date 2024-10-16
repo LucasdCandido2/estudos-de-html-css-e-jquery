@@ -141,7 +141,7 @@ $(document).ready(function(){
                         <td>${e.nome}</td>
                         <td>${e.email}</td>
                         <td>${e.senha}</td>
-                        <td><button onclick="editar(${e.id})">Editar</button></td>
+                        <td><button id="editar" data-id="${e.id}">Editar</button></td>
                         <td><button id="deletar" data-id="${e.id}">Deletar</button></td>
                     </tr>`)
             });
@@ -220,6 +220,17 @@ $(document).ready(function(){
             console.log(`Usuario com ID ${id} deletado com sucesso!`);
             
         })
+    })
+
+    $(document).on('click','#deletar', function(){
+        let id = $(this).data('id');
+            fetch(`http://localhost:3000/pessoas/${id}`,{
+                method: 'PATCH',
+                headers: {
+                    'Content-Type':'application/json'
+                },
+                }
+            )
     })
 
     getData();
