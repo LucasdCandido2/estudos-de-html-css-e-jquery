@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para incluir padding e border na largura total */
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave na mudança de cor */
+}
+
+button:hover {
+    background-color: #4cae4c; /* Cor do botão ao passar o mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    transition: background-color 0.3s; /* Transição suave para o fundo */
+}
+
+th {
+    background-color: #f2f2f2; /* Cor de fundo das células do cabeçalho */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Cor ao passar o mouse sobre as linhas */
+}
+
+tr.inactive {
+    background-color: #f8f8f8;
+    color: #777;
+}
+
+tr.active {
+    background-color: #eaf8e8;
+    color: #324d32;
+}
+
+.status-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown select {
+    padding: 5px;
+    margin-left: 10px; /* Margem à esquerda do dropdown */
+    border-radius: 4px; /* Bordas arredondadas */
+    border: 1px solid #ddd; /* Borda leve */
+}
+
+.status-dropdown {
+    display: none;
+}
+
+.status-dropdown option {
+    padding: 5px; /* Espaçamento nas opções do dropdown */
+}

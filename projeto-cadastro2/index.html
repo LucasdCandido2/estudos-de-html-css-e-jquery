@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Cadastro de Usuário</h2>
+    <form id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <button id="abrirLogin">Logar</button>
+
+    <h3>Usuários Cadastrados</h3>
+    <table id="usuariosTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Senha</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os usuários cadastrados serão inseridos aqui via jQuery -->
+        </tbody>
+    </table>
+
+
+    <!-- Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginNome">Nome:</label>
+                <input type="text" id="loginNome" required><br>
+
+                <label for="loginSenha">Senha:</label>
+                <input type="password" id="loginSenha" required><br>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <p id="loginError" class="error"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

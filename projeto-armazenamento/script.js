@@ -28,6 +28,7 @@ $(document).ready(function() {
         reader.readAsDataURL(imagem);  // Converte para Base64 e exibe no navegador
 
         alert('Dados e imagem salvos localmente (simulado).');
+        $('input').val('');
     });
 
     // Carrega a imagem para preview antes do envio
