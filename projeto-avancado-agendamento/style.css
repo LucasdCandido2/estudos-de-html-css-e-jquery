@@ -1,0 +1,8 @@
+/* Estilo para as bolinhas de status */
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px; /* Espaçamento entre a bolinha e o texto */
+}

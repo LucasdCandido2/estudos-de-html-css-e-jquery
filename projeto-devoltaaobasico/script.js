@@ -282,3 +282,87 @@ multArray7.forEach(function(innerArray){
         
     });
 });
+
+let num1 = [1,2,3,4];
+num1.push(5);
+console.log(num1);
+
+let num2 = [1,2,3,4];
+num2.pop();
+console.log(num2);
+
+let num3 = [1,2,3,4];
+num3.shift();
+console.log(num3);
+
+let num4 = [1,2,3,4];
+num4.unshift(1);
+console.log(num4);
+
+let num5 = [1,2,3,4];
+let doubled2 = num5.map(function(num){
+    return num * 2;
+})
+console.log(doubled2);
+
+let num6 = [1,2,3,4];
+let evens3 = num6.filter(function(num){
+    return num % 2 === 0;
+});
+console.log(evens3);
+
+let num7 = [1,2,3,4];
+num6.forEach(function(num){
+    console.log(num);
+});
+
+let ray = ['matheus','miguel','joao','javier'];
+ray.push('rai');
+console.log(ray);
+
+let ray2 = ['matheus','miguel','joao','javier'];
+ray2.pop();
+console.log(ray2);
+
+let ray3 = ['matheus','miguel','joao','javier'];
+ray3.shift()
+console.log(ray3);
+
+let ray4 = ['matheus','miguel','joao','javier'];
+ray4.unshift('matias');
+console.log(ray4);
+
+let ray5 = ['matheus','miguel','joao','javier'];
+let rayM = ray5.map(function(str){
+    return str.toUpperCase()
+})
+console.log(rayM);
+
+let ray6 = ['matheus','miguel','joao','javier'];
+let rayCase = ray6.filter(function(str){
+    return str.startsWith('m');
+});
+console.log(rayCase);
+
+let ray7 = ['matheus','miguel','joao','javier'];
+ray7.forEach(function(str){
+    console.log(str);
+});
+
+let arrNum = [1,'matheus',2,'miguel',3,'samuel',4,'diego'];
+arrNum.push(5);
+console.log(arrNum);
+
+let arrNum2 = [1,'matheus',2,'miguel',3,'samuel',4,'diego'];
+arrNum2.pop();
+console.log(arrNum2);
+
+let arrNum3 = [1,'matheus',2,'miguel',3,'samuel',4,'diego'];
+arrNum3.shift();
+console.log(arrNum3);
+
+let arrNum4 = [1,'matheus',2,'miguel',3,'samuel',4,'diego'];
+arrNum4.unshift(0,'rafael')
+console.log(arrNum4);
+
+let arrNum5 = [1,'matheus',2,'miguel',3,'samuel',4,'diego'];
