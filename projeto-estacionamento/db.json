@@ -1,0 +1,725 @@
+{
+  "patio": [
+    {
+      "placa": "ABC1234",
+      "entryTime": "2024-10-20T09:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "10.00",
+      "id": 1,
+      "dataFaturamento": "2024-10-20T10:00:00.000Z"
+    },
+    {
+      "placa": "XYZ5678",
+      "entryTime": "2024-10-19T08:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "15.00",
+      "id": 2,
+      "dataFaturamento": "2024-10-19T09:30:00.000Z"
+    },
+    {
+      "placa": "LMN9101",
+      "entryTime": "2024-10-18T12:15:00.000Z",
+      "faturado": true,
+      "valorFaturado": "20.00",
+      "id": 3,
+      "dataFaturamento": "2024-10-18T14:15:00.000Z"
+    },
+    {
+      "placa": "QWE2345",
+      "entryTime": "2024-10-17T07:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "8.00",
+      "id": 4,
+      "dataFaturamento": "2024-10-17T09:00:00.000Z"
+    },
+    {
+      "placa": "RTY6789",
+      "entryTime": "2024-10-16T10:45:00.000Z",
+      "faturado": true,
+      "valorFaturado": "12.00",
+      "id": 5,
+      "dataFaturamento": "2024-10-16T12:15:00.000Z"
+    },
+    {
+      "placa": "ZXC4321",
+      "entryTime": "2024-10-15T11:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "18.00",
+      "id": 6,
+      "dataFaturamento": "2024-10-15T13:00:00.000Z"
+    },
+    {
+      "placa": "JKL0987",
+      "entryTime": "2024-10-14T14:20:00.000Z",
+      "faturado": true,
+      "valorFaturado": "22.00",
+      "id": 7,
+      "dataFaturamento": "2024-10-14T16:00:00.000Z"
+    },
+    {
+      "placa": "MNO6543",
+      "entryTime": "2024-10-13T09:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "11.00",
+      "id": 8,
+      "dataFaturamento": "2024-10-13T11:00:00.000Z"
+    },
+    {
+      "placa": "PQR3210",
+      "entryTime": "2024-10-12T15:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "16.00",
+      "id": 9,
+      "dataFaturamento": "2024-10-12T17:00:00.000Z"
+    },
+    {
+      "placa": "STU4567",
+      "entryTime": "2024-10-21T10:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "10.00",
+      "id": 10,
+      "dataFaturamento": "2024-10-21T11:00:00.000Z"
+    },
+    {
+      "placa": "YUI7890",
+      "entryTime": "2024-10-21T11:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "9.00",
+      "id": 12,
+      "dataFaturamento": "2024-10-21T13:00:00.000Z"
+    },
+    {
+      "placa": "IOP2345",
+      "entryTime": "2024-10-21T12:45:00.000Z",
+      "faturado": true,
+      "valorFaturado": "14.00",
+      "id": 13,
+      "dataFaturamento": "2024-10-21T14:30:00.000Z"
+    },
+    {
+      "placa": "FGH6789",
+      "entryTime": "2024-10-20T16:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "7.00",
+      "id": 14,
+      "dataFaturamento": "2024-10-20T18:00:00.000Z"
+    },
+    {
+      "placa": "JKL4567",
+      "entryTime": "2024-10-19T13:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 15,
+      "dataFaturamento": "2024-10-19T14:45:00.000Z"
+    },
+    {
+      "placa": "QWE9876",
+      "entryTime": "2024-10-18T09:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "30.00",
+      "id": 16,
+      "dataFaturamento": "2024-10-18T12:00:00.000Z"
+    },
+    {
+      "placa": "UYT6543",
+      "entryTime": "2024-10-16T11:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "22.00",
+      "id": 18,
+      "dataFaturamento": "2024-10-16T12:45:00.000Z"
+    },
+    {
+      "placa": "HJK7890",
+      "entryTime": "2024-10-15T09:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "25.00",
+      "id": 19,
+      "dataFaturamento": "2024-10-15T10:30:00.000Z"
+    },
+    {
+      "placa": "GFD1234",
+      "entryTime": "2024-10-14T14:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "19.00",
+      "id": 20,
+      "dataFaturamento": "2024-10-14T15:30:00.000Z"
+    },
+    {
+      "placa": "DAS4567",
+      "entryTime": "2024-10-13T10:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "20.00",
+      "id": 21,
+      "dataFaturamento": "2024-10-13T12:00:00.000Z"
+    },
+    {
+      "placa": "VBN6789",
+      "entryTime": "2024-10-12T16:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "12.00",
+      "id": 22,
+      "dataFaturamento": "2024-10-12T18:00:00.000Z"
+    },
+    {
+      "placa": "KLM1234",
+      "entryTime": "2024-10-11T11:45:00.000Z",
+      "faturado": true,
+      "valorFaturado": "8.00",
+      "id": 23,
+      "dataFaturamento": "2024-10-11T12:30:00.000Z"
+    },
+    {
+      "placa": "QWE0987",
+      "entryTime": "2024-10-10T15:15:00.000Z",
+      "faturado": true,
+      "valorFaturado": "13.00",
+      "id": 24,
+      "dataFaturamento": "2024-10-10T17:15:00.000Z"
+    },
+    {
+      "placa": "ASD4567",
+      "entryTime": "2024-10-09T09:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "15.00",
+      "id": 25,
+      "dataFaturamento": "2024-10-09T10:30:00.000Z"
+    },
+    {
+      "placa": "ERT7890",
+      "entryTime": "2024-10-08T14:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "10.00",
+      "id": 26,
+      "dataFaturamento": "2024-10-08T16:00:00.000Z"
+    },
+    {
+      "placa": "YUI6543",
+      "entryTime": "2024-10-07T11:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 27,
+      "dataFaturamento": "2024-10-07T13:00:00.000Z"
+    },
+    {
+      "placa": "HJK9876",
+      "entryTime": "2024-10-06T10:15:00.000Z",
+      "faturado": true,
+      "valorFaturado": "9.00",
+      "id": 28,
+      "dataFaturamento": "2024-10-06T11:45:00.000Z"
+    },
+    {
+      "placa": "OPQ2345",
+      "entryTime": "2024-10-03T10:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "6.00",
+      "id": 31,
+      "dataFaturamento": "2024-10-03T12:00:00.000Z"
+    },
+    {
+      "placa": "UVW1234",
+      "entryTime": "2024-10-01T16:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "11.00",
+      "id": 33,
+      "dataFaturamento": "2024-10-01T18:30:00.000Z"
+    },
+    {
+      "placa": "XYZ9876",
+      "entryTime": "2024-09-30T09:45:00.000Z",
+      "faturado": true,
+      "valorFaturado": "18.00",
+      "id": 34,
+      "dataFaturamento": "2024-09-30T11:15:00.000Z"
+    },
+    {
+      "placa": "XYZ1111",
+      "entryTime": "2024-10-21T08:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "12.00",
+      "id": 35,
+      "dataFaturamento": "2024-10-21T09:30:00.000Z"
+    },
+    {
+      "placa": "ABC1111",
+      "entryTime": "2024-10-21T07:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "9.00",
+      "id": 36,
+      "dataFaturamento": "2024-10-21T09:00:00.000Z"
+    },
+    {
+      "placa": "DEF1111",
+      "entryTime": "2024-10-21T09:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "15.00",
+      "id": 37,
+      "dataFaturamento": "2024-10-21T11:00:00.000Z"
+    },
+    {
+      "placa": "GHI1111",
+      "entryTime": "2024-10-21T10:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "20.00",
+      "id": 38,
+      "dataFaturamento": "2024-10-21T12:00:00.000Z"
+    },
+    {
+      "placa": "JKL1111",
+      "entryTime": "2024-10-21T11:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "25.00",
+      "id": 39,
+      "dataFaturamento": "2024-10-21T13:00:00.000Z"
+    },
+    {
+      "placa": "MNO1111",
+      "entryTime": "2024-10-21T14:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "30.00",
+      "id": 40,
+      "dataFaturamento": "2024-10-21T15:00:00.000Z"
+    },
+    {
+      "placa": "PQR1111",
+      "entryTime": "2024-10-21T15:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "35.00",
+      "id": 41,
+      "dataFaturamento": "2024-10-21T16:30:00.000Z"
+    },
+    {
+      "placa": "STU1111",
+      "entryTime": "2024-10-21T16:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "40.00",
+      "id": 42,
+      "dataFaturamento": "2024-10-21T17:30:00.000Z"
+    },
+    {
+      "placa": "VWX1111",
+      "entryTime": "2024-10-21T18:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "45.00",
+      "id": 43,
+      "dataFaturamento": "2024-10-21T19:00:00.000Z"
+    },
+    {
+      "placa": "YZA1111",
+      "entryTime": "2024-10-21T18:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "50.00",
+      "id": 44,
+      "dataFaturamento": "2024-10-21T19:30:00.000Z"
+    },
+    {
+      "placa": "BCD1111",
+      "entryTime": "2024-10-21T19:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "55.00",
+      "id": 45,
+      "dataFaturamento": "2024-10-21T20:00:00.000Z"
+    },
+    {
+      "placa": "EFG1111",
+      "entryTime": "2024-10-21T19:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "60.00",
+      "id": 46,
+      "dataFaturamento": "2024-10-21T20:30:00.000Z"
+    },
+    {
+      "placa": "HIJ1111",
+      "entryTime": "2024-10-21T20:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "65.00",
+      "id": 47,
+      "dataFaturamento": "2024-10-21T21:00:00.000Z"
+    },
+    {
+      "placa": "KLM1111",
+      "entryTime": "2024-10-21T20:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "70.00",
+      "id": 48,
+      "dataFaturamento": "2024-10-21T21:30:00.000Z"
+    },
+    {
+      "placa": "NOP1111",
+      "entryTime": "2024-10-21T21:00:00.000Z",
+      "faturado": true,
+      "valorFaturado": "75.00",
+      "id": 49,
+      "dataFaturamento": "2024-10-21T22:00:00.000Z"
+    },
+    {
+      "placa": "QRS1111",
+      "entryTime": "2024-10-21T21:30:00.000Z",
+      "faturado": true,
+      "valorFaturado": "80.00",
+      "id": 50,
+      "dataFaturamento": "2024-10-21T22:30:00.000Z"
+    },
+    {
+      "placa": "123123",
+      "entryTime": "2024-10-21T18:29:12.242Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 51,
+      "dataFaturamento": "2024-10-21T18:51:04.392Z"
+    },
+    {
+      "placa": "123123",
+      "entryTime": "2024-10-21T18:51:12.396Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 52,
+      "dataFaturamento": "2024-10-21T18:52:36.391Z"
+    },
+    {
+      "placa": "ABC1234",
+      "entryTime": "2024-10-21T19:01:32.819Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 53,
+      "dataFaturamento": "2024-10-21T19:02:10.558Z"
+    },
+    {
+      "placa": "ABC1D23",
+      "entryTime": "2024-10-21T19:01:52.569Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 54,
+      "dataFaturamento": "2024-10-21T19:02:12.462Z"
+    },
+    {
+      "placa": "ABC1D23",
+      "entryTime": "2024-10-21T19:07:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 55,
+      "dataFaturamento": "2024-10-21T19:46:35.316Z"
+    },
+    {
+      "placa": "ABC1D24",
+      "entryTime": "2024-10-21T19:15:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.50",
+      "id": 56,
+      "dataFaturamento": "2024-10-21T20:39:20.992Z"
+    },
+    {
+      "placa": "ABC1D25",
+      "entryTime": "2024-10-21T19:25:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.50",
+      "id": 57,
+      "dataFaturamento": "2024-10-21T20:39:23.430Z"
+    },
+    {
+      "placa": "ABC1D26",
+      "entryTime": "2024-10-21T19:30:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.50",
+      "id": 58,
+      "dataFaturamento": "2024-10-21T20:39:27.635Z"
+    },
+    {
+      "placa": "ABC1D27",
+      "entryTime": "2024-10-21T19:35:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.50",
+      "id": 59,
+      "dataFaturamento": "2024-10-21T20:39:29.650Z"
+    },
+    {
+      "placa": "ABC1D28",
+      "entryTime": "2024-10-21T19:40:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 60,
+      "dataFaturamento": "2024-10-21T20:39:31.283Z"
+    },
+    {
+      "placa": "ABC1D29",
+      "entryTime": "2024-10-21T19:45:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 61,
+      "dataFaturamento": "2024-10-21T20:39:32.787Z"
+    },
+    {
+      "placa": "ABC1D30",
+      "entryTime": "2024-10-21T19:50:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 62,
+      "dataFaturamento": "2024-10-21T20:39:34.139Z"
+    },
+    {
+      "placa": "ABC1D31",
+      "entryTime": "2024-10-21T19:55:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 63,
+      "dataFaturamento": "2024-10-21T20:39:35.386Z"
+    },
+    {
+      "placa": "ABC1D32",
+      "entryTime": "2024-10-21T20:00:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 64,
+      "dataFaturamento": "2024-10-21T20:39:36.611Z"
+    },
+    {
+      "placa": "ABC1D33",
+      "entryTime": "2024-10-21T20:05:06.772Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 65,
+      "dataFaturamento": "2024-10-21T20:39:39.043Z"
+    },
+    {
+      "placa": "ABC1D34",
+      "entryTime": "2024-10-21T20:15:06.772Z",
+      "faturado": true,
+      "valorFaturado": "6.00",
+      "id": 66,
+      "dataFaturamento": "2024-10-21T20:39:40.499Z"
+    },
+    {
+      "placa": "ABC1D35",
+      "entryTime": "2024-10-21T20:25:06.772Z",
+      "faturado": true,
+      "valorFaturado": "7.00",
+      "id": 67,
+      "dataFaturamento": "2024-10-21T20:39:41.970Z"
+    },
+    {
+      "placa": "ABC1D36",
+      "entryTime": "2024-10-21T20:35:06.772Z",
+      "faturado": true,
+      "valorFaturado": "8.00",
+      "id": 68,
+      "dataFaturamento": "2024-10-21T20:39:43.618Z"
+    },
+    {
+      "placa": "ABC1D37",
+      "entryTime": "2024-10-21T20:45:06.772Z",
+      "faturado": true,
+      "valorFaturado": "9.00",
+      "id": 69,
+      "dataFaturamento": "2024-10-21T20:39:45.027Z"
+    },
+    {
+      "placa": "ABC1D38",
+      "entryTime": "2024-10-21T20:55:06.772Z",
+      "faturado": true,
+      "valorFaturado": "10.00",
+      "id": 70,
+      "dataFaturamento": "2024-10-21T20:39:46.378Z"
+    },
+    {
+      "placa": "ABC1D39",
+      "entryTime": "2024-10-21T21:05:06.772Z",
+      "faturado": true,
+      "valorFaturado": "11.00",
+      "id": 71,
+      "dataFaturamento": "2024-10-21T20:39:47.851Z"
+    },
+    {
+      "placa": "ABC1D40",
+      "entryTime": "2024-10-21T21:15:06.772Z",
+      "faturado": true,
+      "valorFaturado": "12.00",
+      "id": 72,
+      "dataFaturamento": "2024-10-21T20:39:49.147Z"
+    },
+    {
+      "placa": "ABC1D41",
+      "entryTime": "2024-10-21T21:25:06.772Z",
+      "faturado": true,
+      "valorFaturado": "13.00",
+      "id": 73,
+      "dataFaturamento": "2024-10-21T20:39:50.530Z"
+    },
+    {
+      "placa": "ABC1D42",
+      "entryTime": "2024-10-21T21:35:06.772Z",
+      "faturado": true,
+      "valorFaturado": "14.00",
+      "id": 74,
+      "dataFaturamento": "2024-10-21T20:39:51.859Z"
+    },
+    {
+      "placa": "ABC1D43",
+      "entryTime": "2024-10-21T21:45:06.772Z",
+      "faturado": true,
+      "valorFaturado": "15.50",
+      "id": 75,
+      "dataFaturamento": "2024-10-21T20:39:53.195Z"
+    },
+    {
+      "placa": "ABC1D44",
+      "entryTime": "2024-10-21T21:55:06.772Z",
+      "faturado": true,
+      "valorFaturado": "16.50",
+      "id": 76,
+      "dataFaturamento": "2024-10-21T20:39:54.514Z"
+    },
+    {
+      "placa": "ABC1D45",
+      "entryTime": "2024-10-21T22:05:06.772Z",
+      "faturado": true,
+      "valorFaturado": "17.50",
+      "id": 77,
+      "dataFaturamento": "2024-10-21T20:39:55.843Z"
+    },
+    {
+      "placa": "ABC1D46",
+      "entryTime": "2024-10-21T22:15:06.772Z",
+      "faturado": true,
+      "valorFaturado": "18.50",
+      "id": 78,
+      "dataFaturamento": "2024-10-21T20:39:57.329Z"
+    },
+    {
+      "placa": "ABC1D47",
+      "entryTime": "2024-10-21T22:25:06.772Z",
+      "faturado": true,
+      "valorFaturado": "19.50",
+      "id": 79,
+      "dataFaturamento": "2024-10-21T20:39:58.716Z"
+    },
+    {
+      "placa": "ABC1D48",
+      "entryTime": "2024-10-21T22:35:06.772Z",
+      "faturado": true,
+      "valorFaturado": "20.50",
+      "id": 80,
+      "dataFaturamento": "2024-10-21T20:40:00.155Z"
+    },
+    {
+      "placa": "ABC1D49",
+      "entryTime": "2024-10-21T22:45:06.772Z",
+      "faturado": true,
+      "valorFaturado": "22.00",
+      "id": 81,
+      "dataFaturamento": "2024-10-21T20:40:01.562Z"
+    },
+    {
+      "placa": "ABC1D50",
+      "entryTime": "2024-10-21T22:55:06.772Z",
+      "faturado": true,
+      "valorFaturado": "23.00",
+      "id": 82,
+      "dataFaturamento": "2024-10-21T20:40:03.027Z"
+    },
+    {
+      "placa": "DYR8883",
+      "entryTime": "2024-10-21T19:11:40.290Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 83,
+      "dataFaturamento": "2024-10-21T19:12:50.276Z"
+    },
+    {
+      "placa": "ABC1D23",
+      "entryTime": "2024-10-21T19:48:04.223Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 84,
+      "dataFaturamento": "2024-10-21T19:48:35.172Z"
+    },
+    {
+      "placa": "ABC1D23",
+      "entryTime": "2024-10-21T19:48:36.745Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 85,
+      "dataFaturamento": "2024-10-21T19:49:18.508Z"
+    },
+    {
+      "placa": "ABC1D23",
+      "entryTime": "2024-10-21T19:49:19.940Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 86,
+      "dataFaturamento": "2024-10-21T19:49:33.469Z"
+    },
+    {
+      "placa": "ABC1D23",
+      "entryTime": "2024-10-21T19:53:17.485Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "id": 87,
+      "dataFaturamento": "2024-10-21T19:53:34.140Z"
+    },
+    {
+      "placa": "ABC1D23",
+      "entryTime": "2024-10-21T19:53:46.427Z",
+      "faturado": true,
+      "valorFaturado": "10.00",
+      "id": 88,
+      "dataFaturamento": "2024-10-21T20:40:04.450Z"
+    },
+    {
+      "placa": "DYR8884",
+      "entryTime": "2024-10-21T19:54:00.519Z",
+      "faturado": true,
+      "valorFaturado": "10.00",
+      "id": 89,
+      "dataFaturamento": "2024-10-21T20:40:06.058Z"
+    },
+    {
+      "placa": "ABC1D21",
+      "entryTime": "2024-10-21T20:03:01.310Z",
+      "faturado": true,
+      "valorFaturado": "10.00",
+      "id": 90,
+      "dataFaturamento": "2024-10-21T20:40:07.465Z"
+    },
+    {
+      "placa": "ABC1D20",
+      "entryTime": "2024-10-21T20:05:14.160Z",
+      "faturado": true,
+      "valorFaturado": "10.00",
+      "id": 91,
+      "dataFaturamento": "2024-10-21T20:40:09.890Z"
+    },
+    {
+      "placa": "ABC1D99",
+      "entryTime": "2024-10-21T20:07:53.807Z",
+      "faturado": false,
+      "valorFaturado": 10,
+      "tipo": "carro",
+      "id": 92
+    },
+    {
+      "placa": "ACD1J52",
+      "entryTime": "2024-10-21T20:22:35.139Z",
+      "faturado": false,
+      "valorFaturado": 5,
+      "tipo": "moto",
+      "id": 93
+    },
+    {
+      "placa": "ABC1D20",
+      "entryTime": "2024-10-21T20:40:55.620Z",
+      "faturado": false,
+      "valorFaturado": 5,
+      "tipo": "moto",
+      "id": 94
+    },
+    {
+      "placa": "ASC1A12",
+      "entryTime": "2024-10-21T20:55:18.469Z",
+      "faturado": true,
+      "valorFaturado": "5.00",
+      "tipo": "moto",
+      "id": 95,
+      "dataFaturamento": "2024-10-21T20:56:22.312Z"
+    }
+  ]
+}

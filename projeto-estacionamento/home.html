@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Estacionamento</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Ícones Font Awesome -->
+    <style>
+        /* Estilo personalizado para melhorar a visualização */
+        body {
+            background-color: #f8f9fa; /* Cor de fundo suave */
+        }
+        .card-header {
+            font-weight: bold; /* Negrito no cabeçalho */
+        }
+        .card-title {
+            font-size: 1.5rem; /* Aumentar tamanho do texto */
+        }
+        #navbar-placeholder {
+            margin-bottom: 20px; /* Espaço abaixo da navbar */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Bem-vindo ao Patio Carros e Motos</h1>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Quantidade de Carros no Pátio</div>
+                    <div class="card-body">
+                        <h2 class="card-title">Capacidade máxima do pátio: 40 carros e 35 motos</h2>
+                        <h5 class="card-title">Carros Estacionados: <span id="countParkedCars">0</span></h5>
+                        <h5 class="card-title">Motos Estacionadas: <span id="countParkedMotos">0</span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-header">Valor Gerado Hoje</div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="valor-gerado">R$ 0,00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adicionando uma linha para mais informações ou ações -->
+        <!-- <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <button class="btn btn-primary">Adicionar Veículo</button>
+                <button class="btn btn-warning">Remover Veículo</button>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

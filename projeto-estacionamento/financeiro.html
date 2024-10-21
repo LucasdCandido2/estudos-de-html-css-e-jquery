@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro - Estacionamento</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Ícones Font Awesome -->
+</head>
+<body>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mb-4 text-center">Relatório Financeiro</h1>
+
+                <!-- Exibição de contagem de carros no pátio -->
+                <div class="alert alert-info text-center" role="alert">
+                    <strong>Carros Estacionados: </strong> 
+                    <span id="countParkedCars" class="badge badge-pill badge-primary">0</span>
+                    <strong>Motos Estacionadas: </strong> 
+                    <span id="countParkedMotos" class="badge badge-pill badge-primary">0</span>
+                </div>
+
+                <!-- Exibição de valores já faturados -->
+                <h2 class="my-4 text-center">Faturamento Total</h2>
+                <div class="alert alert-success text-center" role="alert">
+                    <strong>Valor total gerado até agora:</strong> 
+                    R$ <span id="financeiroTotal" class="badge badge-pill badge-success">0.00</span>
+                </div>
+
+                <!-- Tabela de faturamento por carro -->
+                <h3 class="my-4 text-center">Detalhes de Faturamento</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Placa</th>
+                                <th scope="col">Data de Faturamento</th>
+                                <th scope="col">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="faturamentoTableBody">
+                            <!-- Os dados de faturamento serão carregados aqui via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

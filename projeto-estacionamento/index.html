@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <div class="container">
+    <h1>Cadastro de Veículo</h1>
+    
+    <!-- Seção para mostrar preços -->
+    <div id="precoVeiculos" class="alert alert-info" role="alert">
+      <strong>Preços:</strong> Carros: R$ 10,00 | Motos: R$ 5,00
+    </div>
+
+    <form id="carForm">
+        <div class="form-group">
+            <label for="vehicleType">Selecione o tipo de veículo:</label>
+            <select id="vehicleType" class="form-control">
+                <option value="">Selecione...</option>
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+            </select>
+        </div>
+        <div class="form-group" id="placaContainer" style="display: none;"> <!-- Oculto inicialmente -->
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+    
+
+  <!-- Modal para mensagens de erro/confirmacao -->
+  <div class="modal fade" id="carModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Confirmação -->
+  <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmationModalLabel">Confirmação</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Você realmente deseja estacionar o veículo com a placa <strong id="confirmPlaca"></strong>?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" id="confirmButton" class="btn btn-primary">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
