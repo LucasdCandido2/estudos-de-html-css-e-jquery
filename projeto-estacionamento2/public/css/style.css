@@ -1,0 +1,16 @@
+body {
+    padding-top: 20px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  

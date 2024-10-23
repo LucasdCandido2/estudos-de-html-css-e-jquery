@@ -1,0 +1,20 @@
+{
+  "patio": [
+    {
+      "id": "1",
+      "tipo": "Carro",
+      "placa": "ABC1234",
+      "faturado": true,
+      "valor": 80,
+      "entrada": "2024-10-22T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "tipo": "Moto",
+      "placa": "XYZ5678",
+      "faturado": false,
+      "valor": 10,
+      "entrada": "2024-10-22T12:30:00Z"
+    }
+  ]
+}
