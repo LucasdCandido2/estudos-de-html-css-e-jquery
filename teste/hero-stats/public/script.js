@@ -50,7 +50,6 @@ function displayHeroStats(heroData) {
     console.log(heroData);
 
     heroStatsDiv.innerHTML = `
-        <img src="${heroData.imageUrl !== 'N/A' ? heroData.imageUrl : 'default-image.png'}" alt="${heroData.base.name}" />
         <div><strong>Name:</strong> ${heroData.base.name}</div>
         <div><strong>Rarity:</strong> ${heroData.base.rarity}</div>
         <div><strong>Element:</strong> ${heroData.base.element}</div>

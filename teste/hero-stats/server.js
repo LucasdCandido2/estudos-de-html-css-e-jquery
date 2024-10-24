@@ -58,7 +58,6 @@ const getHeroData = async (heroName) => {
                 atk_speed: getStat('#haste-total'),
                 atk_frequency: getStat('.atk-frequency'), // Nova informação
                 atk_type: getStat('.atk-type'), // Nova informação
-                imageUrl: document.querySelector('.fusion-image-element img')?.src || 'N/A'
             };
         });
 

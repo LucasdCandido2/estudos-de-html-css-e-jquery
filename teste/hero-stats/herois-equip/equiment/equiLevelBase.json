@@ -1,0 +1,681 @@
+[
+    {
+        "id": 1001,
+        "item": [
+            {
+                "id": 1000,
+                "item_tips": "A common currency on Adenthia. It can be used to trade for various items.",
+                "show_name": "Gold"
+            }
+        ],
+        "level1": [
+            700
+        ],
+        "level10": [
+            14000
+        ],
+        "level11": [
+            17500
+        ],
+        "level12": [
+            21000
+        ],
+        "level13": [
+            24500
+        ],
+        "level14": [
+            31500
+        ],
+        "level15": [
+            38500
+        ],
+        "level16": [
+            45500
+        ],
+        "level17": [
+            59500
+        ],
+        "level18": [
+            70000
+        ],
+        "level19": [
+            80500
+        ],
+        "level2": [
+            1050
+        ],
+        "level20": [
+            91000
+        ],
+        "level3": [
+            1400
+        ],
+        "level4": [
+            2100
+        ],
+        "level5": [
+            2800
+        ],
+        "level6": [
+            3500
+        ],
+        "level7": [
+            5600
+        ],
+        "level8": [
+            7700
+        ],
+        "level9": [
+            9800
+        ],
+        "quality": 1
+    },
+    {
+        "id": 1002,
+        "item": [
+            {
+                "id": 1000,
+                "item_tips": "A common currency on Adenthia. It can be used to trade for various items.",
+                "show_name": "Gold"
+            }
+        ],
+        "level1": [
+            700
+        ],
+        "level10": [
+            14000
+        ],
+        "level11": [
+            17500
+        ],
+        "level12": [
+            21000
+        ],
+        "level13": [
+            24500
+        ],
+        "level14": [
+            31500
+        ],
+        "level15": [
+            38500
+        ],
+        "level16": [
+            45500
+        ],
+        "level17": [
+            59500
+        ],
+        "level18": [
+            70000
+        ],
+        "level19": [
+            80500
+        ],
+        "level2": [
+            1050
+        ],
+        "level20": [
+            91000
+        ],
+        "level3": [
+            1400
+        ],
+        "level4": [
+            2100
+        ],
+        "level5": [
+            2800
+        ],
+        "level6": [
+            3500
+        ],
+        "level7": [
+            5600
+        ],
+        "level8": [
+            7700
+        ],
+        "level9": [
+            9800
+        ],
+        "quality": 2
+    },
+    {
+        "id": 1003,
+        "item": [
+            {
+                "id": 1000,
+                "item_tips": "A common currency on Adenthia. It can be used to trade for various items.",
+                "show_name": "Gold"
+            }
+        ],
+        "level1": [
+            700
+        ],
+        "level10": [
+            14000
+        ],
+        "level11": [
+            17500
+        ],
+        "level12": [
+            21000
+        ],
+        "level13": [
+            24500
+        ],
+        "level14": [
+            31500
+        ],
+        "level15": [
+            38500
+        ],
+        "level16": [
+            45500
+        ],
+        "level17": [
+            59500
+        ],
+        "level18": [
+            70000
+        ],
+        "level19": [
+            80500
+        ],
+        "level2": [
+            1050
+        ],
+        "level20": [
+            91000
+        ],
+        "level3": [
+            1400
+        ],
+        "level4": [
+            2100
+        ],
+        "level5": [
+            2800
+        ],
+        "level6": [
+            3500
+        ],
+        "level7": [
+            5600
+        ],
+        "level8": [
+            7700
+        ],
+        "level9": [
+            9800
+        ],
+        "quality": 3
+    },
+    {
+        "id": 1004,
+        "item": [
+            {
+                "id": 1000,
+                "item_tips": "A common currency on Adenthia. It can be used to trade for various items.",
+                "show_name": "Gold"
+            }
+        ],
+        "level1": [
+            700
+        ],
+        "level10": [
+            14000
+        ],
+        "level11": [
+            17500
+        ],
+        "level12": [
+            21000
+        ],
+        "level13": [
+            24500
+        ],
+        "level14": [
+            31500
+        ],
+        "level15": [
+            38500
+        ],
+        "level16": [
+            45500
+        ],
+        "level17": [
+            59500
+        ],
+        "level18": [
+            70000
+        ],
+        "level19": [
+            80500
+        ],
+        "level2": [
+            1050
+        ],
+        "level20": [
+            91000
+        ],
+        "level3": [
+            1400
+        ],
+        "level4": [
+            2100
+        ],
+        "level5": [
+            2800
+        ],
+        "level6": [
+            3500
+        ],
+        "level7": [
+            5600
+        ],
+        "level8": [
+            7700
+        ],
+        "level9": [
+            9800
+        ],
+        "quality": 4
+    },
+    {
+        "id": 1005,
+        "item": [
+            {
+                "id": 1000,
+                "item_tips": "A common currency on Adenthia. It can be used to trade for various items.",
+                "show_name": "Gold"
+            }
+        ],
+        "level1": [
+            700
+        ],
+        "level10": [
+            14000
+        ],
+        "level11": [
+            17500
+        ],
+        "level12": [
+            21000
+        ],
+        "level13": [
+            24500
+        ],
+        "level14": [
+            31500
+        ],
+        "level15": [
+            38500
+        ],
+        "level16": [
+            45500
+        ],
+        "level17": [
+            59500
+        ],
+        "level18": [
+            70000
+        ],
+        "level19": [
+            80500
+        ],
+        "level2": [
+            1050
+        ],
+        "level20": [
+            91000
+        ],
+        "level3": [
+            1400
+        ],
+        "level4": [
+            2100
+        ],
+        "level5": [
+            2800
+        ],
+        "level6": [
+            3500
+        ],
+        "level7": [
+            5600
+        ],
+        "level8": [
+            7700
+        ],
+        "level9": [
+            9800
+        ],
+        "quality": 5
+    },
+    {
+        "id": 1001,
+        "enhance_lock": [
+            8,
+            12,
+            16
+        ],
+        "item": [
+            {
+                "id": 4400013,
+                "item_tips": "Magic Dust rich in Creator's Power, used to refine Artifacts.",
+                "show_name": "Essence of Creation"
+            }
+        ],
+        "level1": [
+            30
+        ],
+        "level10": [
+            195
+        ],
+        "level11": [
+            225
+        ],
+        "level12": [
+            255
+        ],
+        "level13": [
+            315
+        ],
+        "level14": [
+            375
+        ],
+        "level15": [
+            450
+        ],
+        "level16": [
+            525
+        ],
+        "level17": [
+            600
+        ],
+        "level18": [
+            675
+        ],
+        "level19": [
+            750
+        ],
+        "level2": [
+            45
+        ],
+        "level20": [
+            825
+        ],
+        "level3": [
+            60
+        ],
+        "level4": [
+            75
+        ],
+        "level5": [
+            90
+        ],
+        "level6": [
+            105
+        ],
+        "level7": [
+            120
+        ],
+        "level8": [
+            135
+        ],
+        "level9": [
+            165
+        ],
+        "lock_req_adv_lv": [
+            15,
+            21,
+            28
+        ],
+        "quality": 1
+    },
+    {
+        "id": 1002,
+        "enhance_lock": [
+            8,
+            12,
+            16
+        ],
+        "item": [
+            {
+                "id": 4400013,
+                "item_tips": "Magic Dust rich in Creator's Power, used to refine Artifacts.",
+                "show_name": "Essence of Creation"
+            }
+        ],
+        "level1": [
+            30
+        ],
+        "level10": [
+            195
+        ],
+        "level11": [
+            225
+        ],
+        "level12": [
+            255
+        ],
+        "level13": [
+            315
+        ],
+        "level14": [
+            375
+        ],
+        "level15": [
+            450
+        ],
+        "level16": [
+            525
+        ],
+        "level17": [
+            600
+        ],
+        "level18": [
+            675
+        ],
+        "level19": [
+            750
+        ],
+        "level2": [
+            45
+        ],
+        "level20": [
+            825
+        ],
+        "level3": [
+            60
+        ],
+        "level4": [
+            75
+        ],
+        "level5": [
+            90
+        ],
+        "level6": [
+            105
+        ],
+        "level7": [
+            120
+        ],
+        "level8": [
+            135
+        ],
+        "level9": [
+            165
+        ],
+        "lock_req_adv_lv": [
+            15,
+            21,
+            28
+        ],
+        "quality": 2
+    },
+    {
+        "id": 1003,
+        "enhance_lock": [
+            8,
+            12,
+            16
+        ],
+        "item": [
+            {
+                "id": 4400013,
+                "item_tips": "Magic Dust rich in Creator's Power, used to refine Artifacts.",
+                "show_name": "Essence of Creation"
+            }
+        ],
+        "level1": [
+            50
+        ],
+        "level10": [
+            325
+        ],
+        "level11": [
+            375
+        ],
+        "level12": [
+            425
+        ],
+        "level13": [
+            525
+        ],
+        "level14": [
+            625
+        ],
+        "level15": [
+            750
+        ],
+        "level16": [
+            875
+        ],
+        "level17": [
+            1000
+        ],
+        "level18": [
+            1125
+        ],
+        "level19": [
+            1250
+        ],
+        "level2": [
+            75
+        ],
+        "level20": [
+            1375
+        ],
+        "level3": [
+            100
+        ],
+        "level4": [
+            125
+        ],
+        "level5": [
+            150
+        ],
+        "level6": [
+            175
+        ],
+        "level7": [
+            200
+        ],
+        "level8": [
+            225
+        ],
+        "level9": [
+            275
+        ],
+        "lock_req_adv_lv": [
+            15,
+            21,
+            28
+        ],
+        "quality": 3
+    },
+    {
+        "id": 1004,
+        "enhance_lock": [
+            8,
+            12,
+            16
+        ],
+        "item": [
+            {
+                "id": 4400013,
+                "item_tips": "Magic Dust rich in Creator's Power, used to refine Artifacts.",
+                "show_name": "Essence of Creation"
+            }
+        ],
+        "level1": [
+            80
+        ],
+        "level10": [
+            520
+        ],
+        "level11": [
+            600
+        ],
+        "level12": [
+            680
+        ],
+        "level13": [
+            840
+        ],
+        "level14": [
+            1000
+        ],
+        "level15": [
+            1200
+        ],
+        "level16": [
+            1400
+        ],
+        "level17": [
+            1600
+        ],
+        "level18": [
+            1800
+        ],
+        "level19": [
+            2000
+        ],
+        "level2": [
+            120
+        ],
+        "level20": [
+            2200
+        ],
+        "level3": [
+            160
+        ],
+        "level4": [
+            200
+        ],
+        "level5": [
+            240
+        ],
+        "level6": [
+            280
+        ],
+        "level7": [
+            320
+        ],
+        "level8": [
+            360
+        ],
+        "level9": [
+            440
+        ],
+        "lock_req_adv_lv": [
+            15,
+            21,
+            28
+        ],
+        "quality": 4
+    }
+]
