@@ -1,0 +1,21 @@
+Problemas encontrados: protocolo só encontra com numeros, as primeiras 3 letras que constam no protocolo não funcionam para fazer a pesquisa. filtro sintetico não traz nenhuma diferença do filtro analitico tarefa 428
+
+Problemas encontrados: protocolo só encontra com numeros, as primeiras 3 letras que constam no protocolo não funcionam para fazer a pesquisa. filtro sintetico não traz nenhuma diferença do filtro analitico tarefa 429
+
+Problemas encontrados: O unico filtro que funciona é o filtro de protocolo, e somente com letras maiusculas, letras minusculas ou com espaço antes ou depois também impedem de funcionar o filtro 430
+
+Filtro de Recarga de bilhete/celular WEB e APP foram mapeados os problemas e criado tarefas nos cards 428, 429, 430 e 431.
+
+Splash não carregou, procurei em rede o getProjects para ver o que ele estava retornando mas não encontrei
+
+Chat ok
+
+menu não hamburguer não aparece
+
+menu aparece após entrar para fazer cadastro ou login, a unica pagina que não funciona é o fale conosco, todas as outras opções funcionaram, a opção fale conosco esta direcionando para o arquivo contact.html mas não tem esse arquivo no hotspot
+
+Splash não carregou após ser feito o login, procurei em rede o getProjects para ver o que ele estava retornando mas não encontrei
+
+fluxo de cadastro e login estão funcionando corretamente
+
+alteração de dados não esta funcionando, tentei procurar em rede, para ver se aparecia em algum lugar como foi a requisição ou o que ele consta como erro, mas também não consta
