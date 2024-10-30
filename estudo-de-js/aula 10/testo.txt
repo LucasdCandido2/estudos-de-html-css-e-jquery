@@ -1,0 +1,8 @@
+Após uma serie de testes no cadastro da aplicação, conclui que os unicos campos que tem realmente uma validação real para ter certeza de que estão preenchidos corretamente são o numero de celular e o CPF, nome tem somente a validação relacionada ao minimo de caracteres que no casa são 3 e a de conter somente letras.
+Empresa não é um campo obrigatorio, não tem validação nenhuma, nem limite de caracteres
+senha não tem nenhum tipo de criterio, nem minimo de caracteres, podendo usar somente 1 ou mesmo ! para ser a senha
+fora isso, sexo e data de nascimento são obrigatorios e precisam ser preenchidos por completo para poder prosseguir
+
+
+E-mail:existe só a validação do html atualmente, precisa ser feita validação para não poder usar e de caracteres invalidos no email, dominio sem numeros, para que as extensões sejam validas e não ser qualquer coisa para colocar
+Senha: colocar um minimo de caracteres para ser feita a senha, pelo menos 6 ou 8 digitos, para poder ser uma senha valida
