@@ -1,0 +1,174 @@
+{
+  "perguntas": [
+    {
+      "id": "1",
+      "pergunta": "Qual é a capital da França?",
+      "opcoes": [
+        "Paris",
+        "Roma",
+        "Londres",
+        "Berlim"
+      ],
+      "correta": "Paris"
+    },
+    {
+      "id": "2",
+      "pergunta": "Qual é o maior planeta do Sistema Solar?",
+      "opcoes": [
+        "Marte",
+        "Terra",
+        "Júpiter",
+        "Vênus"
+      ],
+      "correta": "Júpiter"
+    },
+    {
+      "id": "3",
+      "pergunta": "Quem pintou a Mona Lisa?",
+      "opcoes": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Leonardo da Vinci",
+        "Michelangelo"
+      ],
+      "correta": "Leonardo da Vinci"
+    },
+    {
+      "id": "4",
+      "pergunta": "Quantos estados existem no Brasil?",
+      "opcoes": [
+        "26",
+        "27",
+        "25",
+        "28"
+      ],
+      "correta": "26"
+    },
+    {
+      "id": "5",
+      "pergunta": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "opcoes": [
+        "1965",
+        "1969",
+        "1971",
+        "1980"
+      ],
+      "correta": "1969"
+    },
+    {
+      "id": "6",
+      "pergunta": "Quem é o autor de 'Dom Quixote'?",
+      "opcoes": [
+        "Miguel de Cervantes",
+        "Gabriel García Márquez",
+        "Jorge Luis Borges",
+        "Machado de Assis"
+      ],
+      "correta": "Miguel de Cervantes"
+    },
+    {
+      "id": "7",
+      "pergunta": "Qual é a fórmula química da água?",
+      "opcoes": [
+        "H2O",
+        "CO2",
+        "O2",
+        "H2"
+      ],
+      "correta": "H2O"
+    },
+    {
+      "id": "8",
+      "pergunta": "Qual é o metal mais leve?",
+      "opcoes": [
+        "Ouro",
+        "Prata",
+        "Lítio",
+        "Alumínio"
+      ],
+      "correta": "Lítio"
+    },
+    {
+      "id": "9",
+      "pergunta": "Qual país é conhecido como a terra do sol nascente?",
+      "opcoes": [
+        "China",
+        "Coreia do Sul",
+        "Japão",
+        "Índia"
+      ],
+      "correta": "Japão"
+    },
+    {
+      "id": "10",
+      "pergunta": "Quantos segundos há em uma hora?",
+      "opcoes": [
+        "3600",
+        "6000",
+        "1800",
+        "1200"
+      ],
+      "correta": "3600"
+    }
+  ],
+  "participantes": [
+    {
+      "id": "8da9",
+      "nome": "lucas",
+      "score": 10,
+      "status": "Acertou todas",
+      "perguntasErradas": []
+    },
+    {
+      "id": "d460",
+      "nome": "Joao",
+      "score": 0,
+      "status": "Errou algumas",
+      "perguntasErradas": [
+        "Qual é o metal mais leve?",
+        "Qual é o maior planeta do Sistema Solar?",
+        "Quem pintou a Mona Lisa?",
+        "Em que ano o homem pisou na Lua pela primeira vez?",
+        "Qual é a capital da França?",
+        "Qual é a fórmula química da água?",
+        "Qual país é conhecido como a terra do sol nascente?",
+        "Quantos segundos há em uma hora?",
+        "Quantos estados existem no Brasil?",
+        "Quem é o autor de 'Dom Quixote'?"
+      ]
+    },
+    {
+      "id": "ccf2",
+      "nome": "lucas",
+      "score": 9,
+      "status": "Errou algumas",
+      "perguntasErradas": [
+        "Qual é o metal mais leve?"
+      ]
+    },
+    {
+      "id": "edbc",
+      "nome": "miguel",
+      "score": 8,
+      "status": "Errou algumas",
+      "perguntasErradas": [
+        "Quem pintou a Mona Lisa?",
+        "Em que ano o homem pisou na Lua pela primeira vez?"
+      ]
+    },
+    {
+      "id": "eda6",
+      "nome": "amanda",
+      "score": 10,
+      "status": "Acertou todas",
+      "perguntasErradas": []
+    },
+    {
+      "id": "00e2",
+      "nome": "teste",
+      "score": 10,
+      "status": "Acertou todas",
+      "perguntasErradas": []
+    }
+  ]
+}
