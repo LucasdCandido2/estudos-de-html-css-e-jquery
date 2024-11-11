@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigo Secreto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center my-4">Sorteio de Amigo Secreto</h2>
+    <form id="participants-form">
+      <div id="participant-list">
+        <div class="participant">
+          <input type="text" class="form-control mb-2" name="name" placeholder="Nome" required>
+          <input type="email" class="form-control mb-2" name="email" placeholder="E-mail" required>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary mb-3" id="add-participant">Adicionar Participante</button>
+      <button type="submit" class="btn btn-primary">Realizar Sorteio</button>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
