@@ -1,10 +1,7 @@
+/* Personalize o estilo se desejar */
 body {
-    background-color: #f8f9fa;
-  }
-  .container {
-    max-width: 600px;
-  }
-  h2 {
-    color: #343a40;
-  }
-  
+  font-family: Arial, sans-serif;
+}
+h2 {
+  color: #007bff;
+}

@@ -8,23 +8,62 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2 class="text-center my-4">Sorteio de Amigo Secreto</h2>
-    <form id="participants-form">
-      <div id="participant-list">
-        <div class="participant">
-          <input type="text" class="form-control mb-2" name="name" placeholder="Nome" required>
-          <input type="email" class="form-control mb-2" name="email" placeholder="E-mail" required>
+  <div class="container my-4">
+    <h2 class="text-center">Sorteio de Amigo Secreto</h2>
+
+    <!-- Formulário para adicionar participantes -->
+    <div class="mb-4">
+      <input type="text" id="name" class="form-control mb-2" placeholder="Nome" required>
+      <input type="email" id="email" class="form-control mb-2" placeholder="E-mail" required>
+      <button class="btn btn-secondary" id="add-participant">Adicionar Participante</button>
+    </div>
+
+    <!-- Tabela de participantes -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="participant-list">
+        <!-- Os participantes serão adicionados aqui -->
+      </tbody>
+    </table>
+
+    <!-- Botão para realizar o sorteio -->
+    <button class="btn btn-primary" id="confirm-participants">Confirmar e Enviar E-mails</button>
+  </div>
+
+  <!-- Modal de Confirmação -->
+  <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmationModalLabel">Confirmar Participantes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Confirme a lista de participantes:</p>
+          <ul id="participant-names">
+            <!-- Lista de participantes será adicionada aqui -->
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="send-emails">Enviar E-mails</button>
         </div>
       </div>
-      <button type="button" class="btn btn-secondary mb-3" id="add-participant">Adicionar Participante</button>
-      <button type="submit" class="btn btn-primary">Realizar Sorteio</button>
-    </form>
+    </div>
   </div>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+Durante os processos para testes e atualização da aplicação, foram constatados alguns problemas na atual aplicação em produção, problemas como, a splash quando abre, já vem com o botão de 'X' para fechar ela e já era possivel fechar a splash, sem ter que esperar os 10s estabelecidos para a splash poder ser fechada, foi constatado também que após fechar a splash, ela carregava abaixo da tela de index, ainda sendo possivel clicar na splash, isso ocorrendo tanto no index assim que abre a splash como após fazer login.
+
+Foram criados correções para esses problemas, como garantir que a splash só vai poder ser fechada após os 10s pré estabelecidos, o 'X' para fechar a splash só vai aparecer após os 10 segudos serem finalizados, fechando a splash e sumindo o 'X'
+
+Foi constatado que certas validações no cadastro eram necessarias, já que na senha não havia nenhuma necessidade de quantidade, sendo possivel criar uma senha com 1 caracterer e sendo possivel criar com e-mails invalidos.
+
+Foram criadas essa validações, agora para ter um minimo de 4 caracter, sendo uma senha muito mais segura e compativel com a qualidade de cadastros na atualizade, sobre o e-mail, agora existem validações para não poder colocar letra maiuscula em dominio e extensão, não é mais possivel criar com email sem extensão de dominio mais
+
+Foi criado um arquivo de configuração, para facilitar a criação de novas aplicações, foram feitos testes extensivos realacionados a esse arquivo, para garantir que ele esta realmente funcionando de acordo com a proposta do do arquivo. Foi otimizado a aplicação, diminuindo o tamanho total da aplicação em praticamento 1/3, facilitando para ser feita a troca em casos de atualizações necessarias, facilitando a reprodução da aplicação para proximos projetos, e levando em conta a possibilidade de um sistema para atualização automatica das aplicações, com ela menor, existe uma maior facilidade para ser feito esta atualização.
